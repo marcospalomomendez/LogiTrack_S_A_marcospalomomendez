@@ -221,13 +221,13 @@ class Program
         {
             double tarifa = LeerDoublePositivo("Tarifa plana (€): ");
             envios.Add(new PaqueteEstandar(descripcion, peso, tarifa));
-            Console.WriteLine("✅ Paquete estándar creado correctamente.");
+            Console.WriteLine("Paquete estándar creado correctamente.");
         }
         else if (tipo == 2)
         {
             double recargo = LeerDoublePositivo("Recargo por urgencia (€/kg): ");
             envios.Add(new PaqueteExpress(descripcion, peso, recargo));
-            Console.WriteLine("✅ Paquete express creado correctamente.");
+            Console.WriteLine("Paquete express creado correctamente.");
         }
     }
 
